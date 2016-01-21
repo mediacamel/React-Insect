@@ -1,0 +1,23 @@
+.wrap {width: 100%}
+.logo{float: left; margin-right: 20px}
+
+nav ul {list-style-type: none;}
+nav li {display: inline-block; margin: 10px}
+
+header {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+header:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+header nav{float: right; }
+
+footer{
+	max-width: 960px;
+	margin: 0 auto;	
+}

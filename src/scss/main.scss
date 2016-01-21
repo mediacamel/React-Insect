@@ -1,0 +1,37 @@
+$main-color: #00dce0;
+$full-width: 720px;
+
+@mixin content-block {
+	max-width: $full-width;
+	margin: 0 auto;
+}
+.wrap {width: 100%}
+.logo{float: left; margin-right: 20px}
+
+nav ul {list-style-type: none;}
+nav li {display: inline-block; margin: 10px}
+
+header {
+	@include content-block;
+
+	nav{float: right; }
+	&:after { 
+	   	content: " ";
+	    display: block; 
+	    height: 0; 
+	    clear: both;
+	}
+}
+
+.content{
+	@include content-block;
+	h1{color:$main-color;}
+	.sub {
+	width: $full-width /2;
+	background-color: $main-color;
+	}
+}
+
+footer{
+	@include content-block;
+}
